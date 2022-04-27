@@ -19,8 +19,31 @@
 }
 
 .comics-list{
-    padding: 50px;
-    height: 500px;
+    padding: 70px 0;
     width: 100%;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(19, 19, 19);
+}
+
+.comics-list .container{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.comics-list .container .item{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comics-list .container .item span{
+    text-transform: uppercase;
+    color: white;
+}
+
+.comics-list .item img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }

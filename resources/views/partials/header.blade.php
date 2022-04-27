@@ -20,7 +20,7 @@
                 <li><a href="#">News</a></li>
                 <li><a href="#">Shop</a></li>
             </ul>
-            <input type="text"/>
+            <input placeholder="Search" type="text"/>
         </div>
     </nav>
 </header>

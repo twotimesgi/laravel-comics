@@ -9,6 +9,14 @@
         </div>
     </div>
     <div class="comics-list">
-        <div class="container"></div>
+        <div class="container">
+                @foreach (config('comics') as $item)
+                    <div class="item">
+                        <img src="{{ $item['thumb'] }}" alt="">
+                        <span>{{ $item['series'] }}</span>
+                    </div>
+                @endforeach
+        </div>
     </div>
+    @include('partials.banner')
 @endsection

@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     position: relative;
     height: 100%;
@@ -27,14 +27,14 @@ nav .container{
     display: flex;
     justify-content: space-between;
     gap: 0 20px;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 nav ul{
     display: flex;
-    gap: 15px;
+    gap: 30px;
     font-size: 0.9rem;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -48,6 +48,17 @@ nav ul li a{
     text-transform: uppercase;
     font-weight: 600;
 }
+
+nav input{
+    align-self: center;
+    border: 0;
+    border-bottom: 2px solid rgb(0, 161, 235);
+}
+
+nav input:focus{
+    outline: none;
+}
+
 .top-bar div{
     color: white;
     font-size: 0.9rem;
@@ -59,3 +70,59 @@ nav{
     height: 90px;
 }
 
+.banner{
+    width: 100%;
+    padding: 4rem 0;
+    background-color:  rgb(0, 161, 235);
+}
+
+.banner .container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner .item{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .item img{
+    height: 50px;
+}
+
+.banner .item span{
+    color: white;
+    text-transform: uppercase;
+}
+
+footer .top{
+    height: 400px;
+    width: 100%;
+    background-image: url("../../assets/footer-bg.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .top::after{
+    content: "";
+    background-image: url("../../assets/dc-logo-bg.png");
+    background-size: contain;
+    width: 500px;
+    height: 525px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15%;
+    background-repeat: no-repeat;
+}
+
+footer .bottom{
+    height: 7rem;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+}
