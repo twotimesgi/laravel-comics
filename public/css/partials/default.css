@@ -16,6 +16,7 @@ body{
     text-decoration: none;
     display: block;
     width: max-content;
+    cursor: pointer;
 }
 
 .btn.btn--full{
