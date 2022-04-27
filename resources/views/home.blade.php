@@ -17,6 +17,9 @@
                     </div>
                 @endforeach
         </div>
+        <div class="container">
+            <a href="" class="btn btn--full">load more</a>
+        </div>
     </div>
     @include('partials.banner')
 @endsection
