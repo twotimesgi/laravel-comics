@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('home');
 })->name("comics");
 
-Route::get('/comics/{id}', function($id) {
+Route::get('/detail/{id}', function($id) {
     $comics = collect(config('comics'));
     $prod = $comics->firstWhere('id', $id);
     if(!$prod) abort(404);
