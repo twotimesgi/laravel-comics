@@ -1,169 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;600;800&display=swap');
-
-body{
-    font-family: 'Roboto', sans-serif;
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);@import url(https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;600;800&display=swap);body {
+  font-family: "Roboto", sans-serif;
 }
 
-.btn{
-    margin: 0;
-    font-family: 'Encode Sans Condensed', sans-serif;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    border: 2px solid rgb(0, 161, 235);
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    display: block;
-    width: max-content;
-    cursor: pointer;
+.btn {
+  margin: 0;
+  font-family: "Encode Sans Condensed", sans-serif;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 2px solid rgb(0, 161, 235);
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
 }
 
-.btn.btn--full{
-    background-color: rgb(0, 161, 235);
-    padding: 1rem 3rem;
-    text-align: center;
+.btn.btn--full {
+  background-color: rgb(0, 161, 235);
+  padding: 1rem 3rem;
+  text-align: center;
 }
 
-.top-bar{
-    width: 100%;
-    background-color: rgb(0, 161, 235);
+.top-bar {
+  width: 100%;
+  background-color: rgb(0, 161, 235);
+}
+.top-bar .container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+  gap: 0 20px;
+}
+.top-bar div {
+  color: white;
+  font-size: 0.9rem;
 }
 
-.container{
-    width: 70%;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
+.container {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
 }
 
-.top-bar .container{
-    display: flex;
-    justify-content: end;
-    padding: 5px 0;
-    gap: 0 20px;
+nav {
+  width: 100%;
+  background-color: white;
+  height: 90px;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+  padding: 15px 0;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  font-size: 0.9rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+nav input {
+  align-self: center;
+  border: 0;
+  border-bottom: 2px solid rgb(0, 161, 235);
+}
+nav input:focus {
+  outline: none;
 }
 
-nav .container{
-    display: flex;
-    justify-content: space-between;
-    gap: 0 20px;
-    padding: 15px 0;
+.banner {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: rgb(0, 161, 235);
+}
+.banner .container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner .item {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.banner .item img {
+  height: 50px;
+}
+.banner .item span {
+  color: white;
+  text-transform: uppercase;
 }
 
-nav ul{
-    display: flex;
-    gap: 30px;
-    font-size: 0.9rem;
-    justify-content: space-evenly;
-    align-items: center;
+footer .top {
+  height: 400px;
+  width: 100%;
+  background-image: url("../../assets/footer-bg.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+footer .top::after {
+  content: "";
+  background-image: url("../../assets/dc-logo-bg.png");
+  background-size: contain;
+  width: 500px;
+  height: 525px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15%;
+  background-repeat: no-repeat;
+}
+footer .bottom {
+  height: 7rem;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+}
+footer .bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .bottom .container div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+footer .bottom .container .right span {
+  text-transform: uppercase;
+  color: rgb(0, 161, 235);
+  font-size: 1.2rem;
+  font-family: "Encode Sans Condensed", sans-serif;
 }
 
-nav ul li{
-    list-style: none;
-    font-family: 'Encode Sans Condensed', sans-serif;
+.hero {
+  background-image: url("../../assets/jumbotron.jpg");
+  height: 32rem;
+  width: 100%;
+  background-size: cover;
 }
-
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-nav input{
-    align-self: center;
-    border: 0;
-    border-bottom: 2px solid rgb(0, 161, 235);
-}
-
-nav input:focus{
-    outline: none;
-}
-
-.top-bar div{
-    color: white;
-    font-size: 0.9rem;
-}
-
-nav{
-    width: 100%;
-    background-color: white;
-    height: 90px;
-}
-
-.banner{
-    width: 100%;
-    padding: 4rem 0;
-    background-color:  rgb(0, 161, 235);
-}
-
-.banner .container{
-    display: flex;
-    gap: 20px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.banner .item{
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner .item img{
-    height: 50px;
-}
-
-.banner .item span{
-    color: white;
-    text-transform: uppercase;
-}
-
-footer .top{
-    height: 400px;
-    width: 100%;
-    background-image: url("../../assets/footer-bg.jpg");
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-
-footer .top::after{
-    content: "";
-    background-image: url("../../assets/dc-logo-bg.png");
-    background-size: contain;
-    width: 500px;
-    height: 525px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15%;
-    background-repeat: no-repeat;
-}
-
-footer .bottom{
-    height: 7rem;
-    width: 100%;
-    background-color: rgb(36, 36, 36);
-}
-
-footer .bottom .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .bottom .container div{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-footer .bottom .container .right span{
-    text-transform: uppercase;
-    color: rgb(0, 161, 235);
-    font-size: 1.2rem;
-    font-family: 'Encode Sans Condensed', sans-serif;
+.hero .container .title {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(0, 161, 235);
+  padding: 10px 20px;
+  transform: translateY(50%);
+  font-family: "Encode Sans Condensed", sans-serif;
 }

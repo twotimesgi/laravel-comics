@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 })->name("home");
+
+Route::get('/comics/{id}', function($id) {
+    $comics = collect(config('comics'));
+    $prod = $comics->firstWhere('id', $id);
+    if(!$prod) abort(404);
+
+    return  view("detail", ['prod' => $prod]);
+})->name('comics');

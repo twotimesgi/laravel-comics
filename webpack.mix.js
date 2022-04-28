@@ -12,4 +12,16 @@ mix.browserSync('127.0.0.1:8000');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.sass('resources/sass/app.scss', 'public/css');
+mix.sass('resources/sass/partials/default.scss', 'public/css/partials').options({
+    processCssUrls: false
+});
+mix.sass('resources/sass/partials/home.scss', 'public/css/partials').options({
+    processCssUrls: false
+});
+mix.sass('resources/sass/partials/reset.scss', 'public/css/partials').options({
+    processCssUrls: false
+});
+mix.sass('resources/sass/partials/detail.scss', 'public/css/partials').options({
+    processCssUrls: false
+});

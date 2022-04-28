@@ -11,10 +11,11 @@
     <div class="comics-list">
         <div class="container">
                 @foreach (config('comics') as $item)
-                    <div class="item">
+                    <a href="{{ route('comics', ['id' => $item['id']])}}"><div class="item">
                         <img src="{{ $item['thumb'] }}" alt="">
                         <span>{{ $item['series'] }}</span>
                     </div>
+                    </a>
                 @endforeach
         </div>
         <div class="container">

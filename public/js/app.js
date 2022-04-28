@@ -19425,15 +19425,63 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/partials/default.scss":
+/*!**********************************************!*\
+  !*** ./resources/sass/partials/default.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/partials/detail.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/partials/detail.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/partials/home.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/partials/home.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/partials/reset.scss":
+/*!********************************************!*\
+  !*** ./resources/sass/partials/reset.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/partials/default.scss ./resources/sass/partials/home.scss ./resources/sass/partials/reset.scss ./resources/sass/partials/detail.scss ***!
+  \*******************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/luigibardellagerbi/Documents/Boolean/laravel-molisana/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/luigibardellagerbi/Documents/Boolean/laravel-molisana/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/luigibardellagerbi/Documents/Boolean/laravel-comics/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Users/luigibardellagerbi/Documents/Boolean/laravel-comics/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/luigibardellagerbi/Documents/Boolean/laravel-comics/resources/sass/partials/default.scss */"./resources/sass/partials/default.scss");
+__webpack_require__(/*! /Users/luigibardellagerbi/Documents/Boolean/laravel-comics/resources/sass/partials/home.scss */"./resources/sass/partials/home.scss");
+__webpack_require__(/*! /Users/luigibardellagerbi/Documents/Boolean/laravel-comics/resources/sass/partials/reset.scss */"./resources/sass/partials/reset.scss");
+module.exports = __webpack_require__(/*! /Users/luigibardellagerbi/Documents/Boolean/laravel-comics/resources/sass/partials/detail.scss */"./resources/sass/partials/detail.scss");
 
 
 /***/ })

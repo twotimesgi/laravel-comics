@@ -1,4 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/partials/default.css": "/css/partials/default.css",
+    "/css/partials/home.css": "/css/partials/home.css",
+    "/css/partials/reset.css": "/css/partials/reset.css",
+    "/css/partials/detail.css": "/css/partials/detail.css"
 }
