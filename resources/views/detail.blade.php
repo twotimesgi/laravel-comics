@@ -1,6 +1,6 @@
 @extends('templates.default')
 
-@section('title', 'Home')
+@section('title', $prod['series'])
 
 @section('content')
         <div class="hero hero--details">
@@ -29,8 +29,48 @@
         </div>
         <div class="info-bottom">
             <div class="container">
-
+                <div>
+                    <h3>Talent</h3>
+                    <div class="info">
+                        <div class="label">Art by: </div>
+                        <div class="data">
+                            @foreach($prod['artists'] as $artist)
+                            <?php $c = ""?>
+                            @if(!$loop->last)
+                            <?php $c = ", "?>
+                            @endif
+                            <a href="#">{{ $artist.$c }}</a>                               
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="label">Written by: </div>
+                        <div class="data">
+                            @foreach($prod['writers'] as $writer)
+                            <?php $c = ""?>
+                            @if(!$loop->last)
+                            <?php $c = ", "?>
+                            @endif
+                            <a href="#">{{ $writer.$c }}</a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Specs</h3>
+                    <div class="info">
+                        <div class="label">Series:</div>
+                        <div class="data"><a href="#">{{ $prod['series'] }}</a></div>
+                    </div>
+                    <div class="info">
+                        <div class="label">U.S. Price</div>
+                        <div class="data">{{ $prod['price'] }}</div>
+                    </div>
+                    <div class="info">
+                        <div class="label">On Sale Date: </div>
+                        <div class="data">{{ $prod['sale_date'] }}</div>
+                    </div>
+                </div>
             </div>
         </div>
-
 @endsection

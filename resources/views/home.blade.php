@@ -1,6 +1,6 @@
 @extends('templates.default')
 
-@section('title', 'Home')
+@section('title', 'comics')
 
 @section('content')
     <div class="hero">
@@ -11,7 +11,7 @@
     <div class="comics-list">
         <div class="container">
                 @foreach (config('comics') as $item)
-                    <a href="{{ route('comics', ['id' => $item['id']])}}"><div class="item">
+                    <a href="{{ route('detail', ['id' => $item['id']])}}"><div class="item">
                         <img src="{{ $item['thumb'] }}" alt="">
                         <span>{{ $item['series'] }}</span>
                     </div>

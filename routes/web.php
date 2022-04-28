@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-})->name("home");
+})->name("comics");
 
 Route::get('/comics/{id}', function($id) {
     $comics = collect(config('comics'));
@@ -23,4 +23,4 @@ Route::get('/comics/{id}', function($id) {
     if(!$prod) abort(404);
 
     return  view("detail", ['prod' => $prod]);
-})->name('comics');
+})->name('detail');
